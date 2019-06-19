@@ -1,0 +1,84 @@
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 14px;
+}
+
+.result {
+    width: 90%;
+    height: 250px;
+    margin: 14px;
+    position: relative;
+    box-shadow: 0 0 10px #6a6a6a;
+}
+
+.result img {
+    max-width: 160px;
+    max-height: 70px;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.result a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    transition: all .3s;
+}
+
+.result a:hover {
+    color: #ff8e00;
+}
+
+.result a div {
+    height: 200px;
+}
+
+.result a p, h4 {
+    margin-left: 6px;
+    margin-top: 6px;
+}
+
+.result a p {
+    position: absolute;
+    bottom: 0;
+    font-weight: bold;
+}
+
+.result p span {
+    font-weight: normal;
+}
+
+.result button {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all .3s;
+    background: #7f7f7f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.result button span {
+    margin-left: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.result button:hover {
+    background: #ff8e00;
+}
+
+@media only screen and (min-width: 400px) {
+    .result {
+        width: 150px;
+    }
+}

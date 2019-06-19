@@ -1,0 +1,41 @@
+.details {
+    padding: 14px;
+}
+
+.details img {
+    max-height: 180px;
+    border: 1px solid #ccc;
+}
+
+.details p span {
+    color: #ff8e00;
+    font-weight: bold;
+}
+
+.details p:last-of-type {
+    font-weight: bold;
+}
+
+.details button {
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    cursor: pointer;
+    transition: all .3s;
+    background: #7f7f7f;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.details button span {
+    margin-left: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.details button:hover {
+    background: #ff8e00;
+}

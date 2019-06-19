@@ -1,0 +1,119 @@
+/* The container */
+.container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    left: 0;
+    margin-left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #eee;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ff8e00;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #ff8e00;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+    width: 8px;
+    height: 8px;
+    background: white;
+}
+
+.formholder {
+    padding: 0 14px;
+    display: flex;
+    box-shadow: 0 0 10px #6a6a6a;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+    position: sticky;
+    top: 50px;
+    flex-direction: column;
+}
+
+.formholder form, .formholder label, .formholder h4{
+    color: white;
+}
+
+.formholder h4 {
+    margin-bottom: 6px;
+    color: white;
+}
+
+.sort {
+    transition: all .5s;
+}
+
+.formholder select {
+    background: #6a6a6a;
+    color: white;
+    outline: none;
+    border: 1px solid #ff8e00;
+}
+
+@media only screen and (max-width: 600px) {
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .formholder {
+        flex-direction: row;
+    }
+
+    .formholder div {
+        margin-left: 40px;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+/*	xs (for phones - screens less than 768px wide)
+	sm (for tablets - screens equal to or greater than 768px wide)
+	md (for small laptops - screens equal to or greater than 992px wide)
+	lg (for laptops and desktops - screens equal to or greater than 1200px wide)*/

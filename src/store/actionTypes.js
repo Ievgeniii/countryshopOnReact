@@ -1,0 +1,8 @@
+export const GET_COUNTRIES = 'GET_COUNTRIES';
+export const ADD_TO_CART = 'ADD_TO_CART';
+export const CHANGE_AMOUNT = 'CHANGE_AMOUNT';
+export const DELETE_COUNTRY = 'DELETE_COUNTRY';
+export const LOAD_DETAILS = 'LOAD_DETAILS';
+export const SORT_COUNTRIES = 'SORT_COUNTRIES';
+export const CLEAR_CART = 'CLEAR_CART';
+
